@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .primary-btn {
+    @apply bg-primary text-white font-bold px-4 py-2 rounded-full;
+  }
+  .secondary-btn {
+    @apply bg-gray-400 text-[#fdfdfd] font-bold px-4 py-2 rounded-full;
+  }
+}
+
+@layer utilities {
+  .img-shadow {
+    filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.4));
+  }
+}
+
+/* E-comm */
+
+@layer components {
+  .search {
+    @apply w-0 group-hover:w-[300px] transition-all duration-300 rounded-full group-hover:border group-hover:border-gray-500 px-3 py-1 focus:outline-none dark:border-gray-800 dark:bg-gray-900 group-hover:dark:bg-gray-800;
+  }
+}
